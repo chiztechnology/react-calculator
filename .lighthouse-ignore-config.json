@@ -1,0 +1,35 @@
+{
+    "chromeOptions": {
+    },
+    "lighthouseOptions": {
+        "output": "json"
+    },
+    "ignored": [
+        {
+            "auditId": "geolocation-on-start",
+            "justification": "The customer requires this."
+        }
+    ],
+    "baseline": [
+        {
+            "auditId": "link-name",
+            "score": 0
+        },
+        {
+            "auditId": "uses-responsive-images",
+            "score": 0.86
+        },
+        {
+            "auditId": "first-contentful-paint",
+            "score": 0.41
+        },
+        {
+            "auditId": "redirects-http",
+            "score": 0
+        },
+        {
+            "auditId": "uses-long-cache-ttl",
+            "score": 0.3
+        }
+    ]
+}
