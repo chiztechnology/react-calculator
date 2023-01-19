@@ -36,14 +36,14 @@
      ]
     },
     "ignorePatterns": ["dist/", "build/"],
-    "no-unused-vars": [
-        "error",
-        {
-            "ignoreRestSiblings": true,
-            "destructuredArrayIgnorePattern": "[A-Z]",
-            "caughtErrors": "none"
-        }
-    ],
+    // "no-unused-vars": [
+    //     "error",
+    //     {
+    //         "ignoreRestSiblings": true,
+    //         "destructuredArrayIgnorePattern": "[A-Z]",
+    //         "caughtErrors": "none"
+    //     }
+    // ],
     "settings": {
         "import/resolver": {
           "node": {
