@@ -35,5 +35,20 @@
         }
      ]
     },
-    "ignorePatterns": ["dist/", "build/"]
+    "ignorePatterns": ["dist/", "build/"],
+    "no-unused-vars": [
+        "error",
+        {
+            "ignoreRestSiblings": true,
+            "destructuredArrayIgnorePattern": "[A-Z]",
+            "caughtErrors": "none"
+        }
+    ],
+    "settings": {
+        "import/resolver": {
+          "node": {
+            "extensions": [".js", ".jsx", ".ts", ".tsx"]
+          }
+        }
+      }
   }
