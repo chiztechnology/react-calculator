@@ -1,3 +1,32 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Codespaces
+Marketplace
+Explore
+ 
+@chiztechnology 
+HunterX-7
+/
+Math-Magic-Calculator
+Public
+Fork your own copy of HunterX-7/Math-Magic-Calculator
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+Math-Magic-Calculator/.github/workflows/linters.yml
+
+HunterX-7 React setup and linters setup
+Latest commit 906da1c 4 days ago
+ History
+ 0 contributors
+45 lines (42 sloc)  1.91 KB
+
 name: Linters
 
 on: pull_request
@@ -6,32 +35,21 @@ env:
   FORCE_COLOR: 1
 
 jobs:
-  lighthouse:
-    # name: Lighthouse
-    # runs-on: ubuntu-22.04
-    # steps:
-    #   - uses: actions/checkout@v2
-    #   - uses: actions/setup-node@v1
-    #     with:
-    #       node-version: "12.x"
-    #   - name: Setup Lighthouse
-    #     run: npm install -g @lhci/cli@0.7.x
-    #   - name: Lighthouse Report
-    #     run: lhci autorun --upload.target=temporary-public-storage --collect.staticDistDir=.
-  webhint:
-    name: Webhint
+  eslint:
+    name: ESLint
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
           node-version: "12.x"
-      - name: Setup Webhint
+      - name: Setup ESLint
         run: |
-          npm install --save-dev hint@7.x
-          [ -f .hintrc ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.hintrc
-      - name: Webhint Report
-        run: npx hint .
+          npm install --save-dev eslint@7.x eslint-config-airbnb@18.x eslint-plugin-import@2.x eslint-plugin-jsx-a11y@6.x eslint-plugin-react@7.x eslint-plugin-react-hooks@4.x @babel/eslint-parser@7.x @babel/core@7.x  @babel/plugin-syntax-jsx@7.x @babel/preset-env@7.x  @babel/preset-react@7.x
+          [ -f .eslintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/react-redux/.eslintrc.json
+          [ -f .babelrc ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/react-redux/.babelrc
+      - name: ESLint Report
+        run: npx eslint .
   stylelint:
     name: Stylelint
     runs-on: ubuntu-22.04
@@ -43,23 +61,9 @@ jobs:
       - name: Setup Stylelint
         run: |
           npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-          [ -f .stylelintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.stylelintrc.json
+          [ -f .stylelintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/react-redux/.stylelintrc.json
       - name: Stylelint Report
         run: npx stylelint "**/*.{css,scss}"
-  eslint:
-    name: ESLint
-    runs-on: ubuntu-22.04
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: "12.x"
-      - name: Setup ESLint
-        run: |
-          npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
-          [ -f .eslintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.eslintrc.json
-      - name: ESLint Report
-        run: npx eslint .
   nodechecker:
     name: node_modules checker
     runs-on: ubuntu-22.04
@@ -68,3 +72,18 @@ jobs:
       - name: Check node_modules existence
         run: |
           if [ -d "node_modules/" ]; then echo -e "\e[1;31mThe node_modules/ folder was pushed to the repo. Please remove it from the GitHub repository and try again."; echo -e "\e[1;32mYou can set up a .gitignore file with this folder included on it to prevent this from happening in the future." && exit 1; fi
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Math-Magic-Calculator/linters.yml at development · HunterX-7/Math-Magic-Calculator
