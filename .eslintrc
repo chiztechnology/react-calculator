@@ -35,14 +35,8 @@
             }
         ],
         "react/prop-types": 0,
-        "no-unused-vars": [
-            "error",
-            {
-                "ignoreRestSiblings": true,
-                "destructuredArrayIgnorePattern": "[A-Z]",
-                "caughtErrors": "none"
-            }
-        ],
+        "no-unused-vars": "off",
+        "arrow-body-style": ["error", "never"],
         "import/extensions": [
             "error",
             "ignorePackages",
