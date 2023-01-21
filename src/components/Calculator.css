@@ -5,3 +5,10 @@
   height: 100%;
   width: 600px;
 }
+
+.display-screen {
+  width: 600px;
+  height: 40px;
+  background-color: rgb(212, 209, 209);
+  font-family: 'Tahoma', sans-serif;
+}
