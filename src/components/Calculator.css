@@ -9,6 +9,15 @@
 .display-screen {
   width: 600px;
   height: 40px;
-  background-color: rgb(212, 209, 209);
+  background-color: rgb(164, 161, 161);
   font-family: 'Tahoma', sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  padding-bottom: 20px;
 }
+
+.screen-text {
+  color: #fff;
+}
+

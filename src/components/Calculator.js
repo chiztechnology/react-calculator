@@ -8,8 +8,8 @@ class Calculator extends React.Component {
     return (
       <div className='component-app'>
         {/* display zone */}
-        <div style={{ width: 300 }}>
-          <h3 style={{ paddingLeft: 15 }}>000</h3>
+        <div className='display-screen'>
+          <h3 className = 'screen-text'>000</h3>
         </div>
         {/* buttons and signs */}
         <ButtonPanel />
