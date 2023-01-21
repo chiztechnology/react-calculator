@@ -1,2 +1,2 @@
-src/*.js
-src/components/*.js
+/src/*.js
+/src/components/*.js
