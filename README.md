@@ -49,6 +49,7 @@ After you're finished please remove all the comments and instructions!
   - [Usage](#usage)
   - [Run tests](#run-tests)
 - [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
@@ -129,6 +130,18 @@ Twitter: [IsraelChizungu](https://twitter.com/IsraelChizungu)
 LinkedIn: [IsraelChizungu](https://www.linkedin.com/in/israel-chizungu-b70316125/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+> In the future we're planning to add some interesting features to make the project looks great.
+
+- **square root option**
+- **Saving last result to Localstorage**
+- **Make the site responsive**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- CONTRIBUTING -->
 
