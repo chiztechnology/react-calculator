@@ -1,21 +1,23 @@
 import React from 'react';
+import Display from './Display';
 import ButtonPanel from './ButtonPanel';
-import './ButtonPanel.css';
-import './Calculator.css';
+import calculate from '../logic/calculate';
 
-class Calculator extends React.Component {
-  render() {
-    return (
-      <div className='component-app'>
-        {/* display zone */}
-        <div className='display-screen'>
-          <h3 className = 'screen-text'>000</h3>
-        </div>
-        {/* buttons and signs */}
-        <ButtonPanel />
-      </div>
-    );
-  }
+export default class Calculator extends React.Component {
+    state = {
+        total: null,
+        next: null,
+        operation: null,
+    };
+
+    handleClick = buttonName => this.setState(calculate(this.state, buttonName));
+
+    render() {
+        return (
+            <div className='component-app'>
+                <Display value={this.state.next || this.state.total || '0'} />
+                <ButtonPanel clickHandler={this.handleClick} />
+            </div>
+        );
+    }
 }
-
-export default Calculator;
