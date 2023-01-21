@@ -1,10 +1,6 @@
 import './App.css';
 import Calculator from './components/Calculator.js';
 
-const App = () => {
-  return (
-    <Calculator />
-  );
-};
+const App = () => <Calculator />;
 
 export default App;

@@ -37,6 +37,8 @@
         "react/prop-types": 0,
         "no-unused-vars": "off",
         "arrow-body-style": ["error", "never"],
+        "react/jsx-uses-react": "error",   
+        "react/jsx-uses-vars": "error",
         "import/extensions": [
             "error",
             "ignorePackages",
