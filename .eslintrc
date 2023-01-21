@@ -1,29 +1,61 @@
 {
     "env": {
-      "browser": true,
-      "es6": true,
-      "jest": true
+        "browser": true,
+        "es6": true,
+        "jest": true
     },
     "parser": "@babel/eslint-parser",
     "parserOptions": {
-      "ecmaFeatures": {
-        "jsx": true
-      },
-      "ecmaVersion": 2018,
-      "sourceType": "module"
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
     },
-    "extends": ["airbnb", "plugin:react/recommended", "plugin:react-hooks/recommended"],
-    "plugins": ["react"],
+    "extends": [
+        "airbnb",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended"
+    ],
+    "plugins": [
+        "react"
+    ],
     "rules": {
-      "react/react-in-jsx-scope": "off",
-      "import/no-unresolved": "off",
-      "no-shadow": "off",
-      "jsx-quotes": [2, "prefer-single"],
-      "react/prefer-stateless-function": [2, { "ignorePureComponents": true }],
-
+        "react/react-in-jsx-scope": "off",
+        "import/no-unresolved": "off",
+        "no-shadow": "off",
+        "jsx-quotes": [
+            2,
+            "prefer-single"
+        ],
+        "react/prefer-stateless-function": [
+            2,
+            {
+                "ignorePureComponents": true
+            }
+        ],
+        "react/prop-types": 0,
+        "no-unused-vars": [
+            "error",
+            {
+                "ignoreRestSiblings": true,
+                "destructuredArrayIgnorePattern": "[A-Z]",
+                "caughtErrors": "none"
+            }
+        ],
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
+            }
+        ]
     },
     "ignorePatterns": [
-      "dist/",
-      "build/"
+        "dist/",
+        "build/"
     ]
-  }
+}
