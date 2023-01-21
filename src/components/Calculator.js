@@ -1,8 +1,7 @@
 import React from 'react';
 import ButtonPanel from './ButtonPanel';
 import './ButtonPanel.css';
-import './Calculator.css'
-
+import './Calculator.css';
 
 class Calculator extends React.Component {
   render() {
@@ -15,7 +14,7 @@ class Calculator extends React.Component {
         {/* buttons and signs */}
         <ButtonPanel />
       </div>
-    )
+    );
   }
 }
 
