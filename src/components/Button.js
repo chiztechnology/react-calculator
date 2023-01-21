@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import './Button.css';
 
 export default class Button extends React.Component {
+
   static propTypes = {
     name: PropTypes.string,
     orange: PropTypes.bool,
@@ -12,6 +13,7 @@ export default class Button extends React.Component {
   };
 
   handleClick = () => {
+    console.log(this.props);
     this.props.clickHandler(this.props.name);
   };
 
