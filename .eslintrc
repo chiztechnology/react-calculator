@@ -14,7 +14,8 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "plugin:react-hooks/recommended"
+        "plugin:react-hooks/recommended",
+        "plugin:import/recommended"
     ],
     "plugins": [
         "react"
