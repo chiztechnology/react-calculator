@@ -3,17 +3,10 @@ import PropTypes from 'prop-types';
 import './ButtonPanel.css';
 import './Calculator.css';
 
-export default class Display extends React.PureComponent {
+const Display = (props) => (
+    <div className='display-screen'>
+        <h3 className='screen-text'>{props.value}</h3>
+    </div>
+);
 
-    static propTypes = {
-        value: PropTypes.string,
-    };
-
-    render() {
-        return (
-            <div className='display-screen'>
-                <h3 className='screen-text'>{this.props.value}</h3>
-            </div>
-        );
-    }
-}
+export default Display
