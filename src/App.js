@@ -1,6 +1,6 @@
 import './App.css';
-import Calculator from './components/Calculator';
+import Navigation from './Navigation';
 
-const App = () => <Calculator />;
+const App = () => <Navigation />;
 
 export default App;

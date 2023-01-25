@@ -10,7 +10,8 @@
             "jsx": true
         },
         "ecmaVersion": 2018,
-        "sourceType": "module"
+        "sourceType": "module",
+        "requireConfigFile": false
     },
     "extends": [
         "eslint:recommended",
@@ -39,7 +40,9 @@
         ],
         "react/prop-types": 0,
         "no-unused-vars": "off",
-        "arrow-body-style": ["error"],
+        "arrow-body-style": [
+            "error"
+        ],
         "react/jsx-uses-react": "error",
         "react/jsx-uses-vars": "error",
         "import/extensions": [
