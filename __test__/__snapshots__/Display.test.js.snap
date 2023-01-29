@@ -9,13 +9,3 @@ exports[`renders correctly the Displa component when there are no items 1`] = `
   />
 </div>
 `;
-
-exports[`renders correctly when there are no items 1`] = `
-<div
-  className="display-screen"
->
-  <h3
-    className="screen-text"
-  />
-</div>
-`;
